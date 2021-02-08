@@ -1,0 +1,3 @@
+[submodule "textgenrnn"]
+	path = textgenrnn
+	url = https://github.com/minimaxir/textgenrnn
