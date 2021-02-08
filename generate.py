@@ -10,7 +10,11 @@ from textgenrnn import textgenrnn
 textgen = textgenrnn()
 
 # Let's train the model with the script for Love Never Dies
-textgen.train_from_file('scripts/love-never-dies.txt')
+textgen.reset()
+textgen.train_from_largetext_file('scripts/love-never-dies.txt', 
+                        new_model=True,
+                        word_level=True,
+                        num_epochs=1)
 
 # Here goes nothing!
-textgen.generate_to_file('generated/love-never-ever-dies.txt')
+textgen.generate_to_file('generated/love-never-ever-dies.md', temperature=0.75)

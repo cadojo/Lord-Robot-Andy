@@ -1,3 +1,6 @@
 [submodule "textgenrnn"]
 	path = textgenrnn
 	url = https://github.com/minimaxir/textgenrnn
+[submodule "gpt-2"]
+	path = gpt-2
+	url = https://github.com/openai/gpt-2.git
